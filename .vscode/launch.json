@@ -1,0 +1,121 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launch VRST (Debug)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame-Linux-Debug",
+			"preLaunchTask": "VRST Linux Debug Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UE/UE5.1",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UE/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRST (DebugGame)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame-Linux-DebugGame",
+			"preLaunchTask": "VRST Linux DebugGame Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UE/UE5.1",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UE/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRST (Development)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame",
+			"preLaunchTask": "VRST Linux Development Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UE/UE5.1",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UE/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRST (Test)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame-Linux-Test",
+			"preLaunchTask": "VRST Linux Test Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UE/UE5.1",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UE/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRST (Shipping)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame-Linux-Shipping",
+			"preLaunchTask": "VRST Linux Shipping Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UE/UE5.1",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UE/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRSTEditor (Debug)",
+			"request": "launch",
+			"program": "/home/mango/UE/UE5.1/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+			"preLaunchTask": "VRSTEditor Linux Debug Build",
+			"args": [
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject"
+			],
+			"cwd": "/home/mango/UE/UE5.1",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UE/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRSTEditor (DebugGame)",
+			"request": "launch",
+			"program": "/home/mango/UE/UE5.1/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+			"preLaunchTask": "VRSTEditor Linux DebugGame Build",
+			"args": [
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject"
+			],
+			"cwd": "/home/mango/UE/UE5.1",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UE/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRSTEditor (Development)",
+			"request": "launch",
+			"program": "/home/mango/UE/UE5.1/Engine/Binaries/Linux/UnrealEditor",
+			"preLaunchTask": "VRSTEditor Linux Development Build",
+			"args": [
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject"
+			],
+			"cwd": "/home/mango/UE/UE5.1",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UE/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "coreclr",
+			"request": "launch",
+			"program": "/home/mango/UE/UE5.1/Engine/Build/BatchFiles/RunUBT.bat",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-game",
+				"-engine"
+			],
+			"console": "internalConsole",
+			"internalConsoleOptions": "openOnSessionStart",
+			"stopAtEntry": false,
+			"cwd": "/home/mango/UE/UE5.1"
+		}
+	]
+}

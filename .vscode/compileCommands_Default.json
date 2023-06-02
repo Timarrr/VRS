@@ -1,0 +1,58 @@
+[
+	{
+		"file": "/home/mango/Documents/Unreal Projects/VRST/Source/VRST/GrabComponent.cpp",
+		"arguments": [
+			"/home/mango/UE/UE5.1/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/mango/Documents/Unreal Projects/VRST/.vscode/compileCommands_Default/VRST.254.rsp"
+		],
+		"directory": "/home/mango/UE/UE5.1/Engine/Source"
+	},
+	{
+		"file": "/home/mango/Documents/Unreal Projects/VRST/Source/VRST/GrabComponent.h",
+		"arguments": [
+			"/home/mango/UE/UE5.1/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/mango/Documents/Unreal Projects/VRST/.vscode/compileCommands_Default/VRST.254.rsp"
+		],
+		"directory": "/home/mango/UE/UE5.1/Engine/Source"
+	},
+	{
+		"file": "/home/mango/Documents/Unreal Projects/VRST/Source/VRST/Rifle.cpp",
+		"arguments": [
+			"/home/mango/UE/UE5.1/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/mango/Documents/Unreal Projects/VRST/.vscode/compileCommands_Default/VRST.254.rsp"
+		],
+		"directory": "/home/mango/UE/UE5.1/Engine/Source"
+	},
+	{
+		"file": "/home/mango/Documents/Unreal Projects/VRST/Source/VRST/Rifle.h",
+		"arguments": [
+			"/home/mango/UE/UE5.1/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/mango/Documents/Unreal Projects/VRST/.vscode/compileCommands_Default/VRST.254.rsp"
+		],
+		"directory": "/home/mango/UE/UE5.1/Engine/Source"
+	},
+	{
+		"file": "/home/mango/Documents/Unreal Projects/VRST/Source/VRST/VRST.Build.cs",
+		"arguments": [
+			"/home/mango/UE/UE5.1/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/mango/Documents/Unreal Projects/VRST/.vscode/compileCommands_Default/VRST.254.rsp"
+		],
+		"directory": "/home/mango/UE/UE5.1/Engine/Source"
+	},
+	{
+		"file": "/home/mango/Documents/Unreal Projects/VRST/Source/VRST/VRST.cpp",
+		"arguments": [
+			"/home/mango/UE/UE5.1/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/mango/Documents/Unreal Projects/VRST/.vscode/compileCommands_Default/VRST.254.rsp"
+		],
+		"directory": "/home/mango/UE/UE5.1/Engine/Source"
+	},
+	{
+		"file": "/home/mango/Documents/Unreal Projects/VRST/Source/VRST/VRST.h",
+		"arguments": [
+			"/home/mango/UE/UE5.1/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v20_clang-13.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+			"@/home/mango/Documents/Unreal Projects/VRST/.vscode/compileCommands_Default/VRST.254.rsp"
+		],
+		"directory": "/home/mango/UE/UE5.1/Engine/Source"
+	}
+]

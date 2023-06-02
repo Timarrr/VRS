@@ -1,0 +1,720 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "VRST Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"Debug",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"Debug",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"Debug",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"DebugGame",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"DebugGame",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"DebugGame",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"Development",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"Development",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"Development",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"Test",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"Test",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"Test",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"Shipping",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"Shipping",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Linux",
+				"Shipping",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"Debug",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"Debug",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST LinuxArm64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"Debug",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST LinuxArm64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"DebugGame",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"Development",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"Development",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST LinuxArm64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"Development",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"Test",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"Test",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST LinuxArm64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"Test",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"Shipping",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"Shipping",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST LinuxArm64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRST LinuxArm64 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"LinuxArm64",
+				"Shipping",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRSTEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSTEditor",
+				"Linux",
+				"Debug",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRSTEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSTEditor",
+				"Linux",
+				"Debug",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRSTEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRSTEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSTEditor",
+				"Linux",
+				"Debug",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRSTEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSTEditor",
+				"Linux",
+				"DebugGame",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRSTEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSTEditor",
+				"Linux",
+				"DebugGame",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRSTEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRSTEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSTEditor",
+				"Linux",
+				"DebugGame",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRSTEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSTEditor",
+				"Linux",
+				"Development",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRSTEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSTEditor",
+				"Linux",
+				"Development",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRSTEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		},
+		{
+			"label": "VRSTEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSTEditor",
+				"Linux",
+				"Development",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/UE/UE5.1"
+			}
+		}
+	]
+}
