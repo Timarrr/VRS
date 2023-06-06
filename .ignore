@@ -1,6 +1,7 @@
-.vscode
 Content
 DerivedDataCache
 Intermediate
 Saved
 .cache
+.git
+.vscode

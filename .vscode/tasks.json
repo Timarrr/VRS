@@ -2,6 +2,751 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "VRST Android Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"Debug",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Debug Cook+Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=Debug",
+				"-ServerConfig=Debug",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"VRSTEditor Linux Development Build",
+				"VRST Android Debug Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Debug Cook",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=Debug",
+				"-ServerConfig=Debug",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook"
+			],
+			"dependsOn": [
+				"VRSTEditor Linux Development Build",
+				"VRST Android Debug Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Debug Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=Debug",
+				"-ServerConfig=Debug",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-DeploySoToDevice",
+				"-SkipCook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"VRST Android Debug Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"Debug",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST Android Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"Debug",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"DebugGame",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android DebugGame Cook+Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=DebugGame",
+				"-ServerConfig=DebugGame",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"VRSTEditor Linux Development Build",
+				"VRST Android DebugGame Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android DebugGame Cook",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=DebugGame",
+				"-ServerConfig=DebugGame",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook"
+			],
+			"dependsOn": [
+				"VRSTEditor Linux Development Build",
+				"VRST Android DebugGame Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android DebugGame Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=DebugGame",
+				"-ServerConfig=DebugGame",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-DeploySoToDevice",
+				"-SkipCook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"VRST Android DebugGame Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"DebugGame",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST Android DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"DebugGame",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"Development",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Development Cook+Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=Development",
+				"-ServerConfig=Development",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"VRSTEditor Linux Development Build",
+				"VRST Android Development Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Development Cook",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=Development",
+				"-ServerConfig=Development",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook"
+			],
+			"dependsOn": [
+				"VRSTEditor Linux Development Build",
+				"VRST Android Development Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Development Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=Development",
+				"-ServerConfig=Development",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-DeploySoToDevice",
+				"-SkipCook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"VRST Android Development Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"Development",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST Android Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"Development",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"Test",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Test Cook+Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=Test",
+				"-ServerConfig=Test",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"VRSTEditor Linux Development Build",
+				"VRST Android Test Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Test Cook",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=Test",
+				"-ServerConfig=Test",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook"
+			],
+			"dependsOn": [
+				"VRSTEditor Linux Development Build",
+				"VRST Android Test Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Test Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=Test",
+				"-ServerConfig=Test",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-DeploySoToDevice",
+				"-SkipCook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"VRST Android Test Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"Test",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST Android Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"Test",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"Shipping",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Shipping Cook+Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=Shipping",
+				"-ServerConfig=Shipping",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"VRSTEditor Linux Development Build",
+				"VRST Android Shipping Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Shipping Cook",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=Shipping",
+				"-ServerConfig=Shipping",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-Cook"
+			],
+			"dependsOn": [
+				"VRSTEditor Linux Development Build",
+				"VRST Android Shipping Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Shipping Deploy",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/RunUAT.sh",
+			"args": [
+				"BuildCookRun",
+				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
+				"-Project=/home/mango/VRST/VRST.uproject",
+				"-noP4",
+				"-ClientConfig=Shipping",
+				"-ServerConfig=Shipping",
+				"-NoCompileEditor",
+				"-utf8output",
+				"-Platform=Android",
+				"-TargetPlatform=Android",
+				"-ini:Game:[/Script/UnrealEd.ProjectPackagingSettings]:BlueprintNativizationMethod=Disabled",
+				"-Compressed",
+				"-IterativeCooking",
+				"-IterativeDeploy",
+				"-DeploySoToDevice",
+				"-SkipCook",
+				"-Stage",
+				"-Deploy"
+			],
+			"dependsOn": [
+				"VRST Android Shipping Build"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"Shipping",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRST Android Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
+			"label": "VRST Android Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRST",
+				"Android",
+				"Shipping",
+				"/home/mango/VRST/VRST.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/mango/Games/UE5.1"
+			}
+		},
+		{
 			"label": "VRST Linux Debug Build",
 			"group": "build",
 			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
@@ -9,13 +754,13 @@
 				"VRST",
 				"Linux",
 				"Debug",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -26,7 +771,7 @@
 				"VRST",
 				"Linux",
 				"Debug",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -35,7 +780,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -46,14 +791,14 @@
 				"VRST",
 				"Linux",
 				"Debug",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -64,13 +809,13 @@
 				"VRST",
 				"Linux",
 				"DebugGame",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -81,7 +826,7 @@
 				"VRST",
 				"Linux",
 				"DebugGame",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -90,7 +835,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -101,14 +846,14 @@
 				"VRST",
 				"Linux",
 				"DebugGame",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -119,13 +864,13 @@
 				"VRST",
 				"Linux",
 				"Development",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -136,7 +881,7 @@
 				"VRST",
 				"Linux",
 				"Development",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -145,7 +890,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -156,14 +901,14 @@
 				"VRST",
 				"Linux",
 				"Development",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -174,13 +919,13 @@
 				"VRST",
 				"Linux",
 				"Test",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -191,7 +936,7 @@
 				"VRST",
 				"Linux",
 				"Test",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -200,7 +945,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -211,14 +956,14 @@
 				"VRST",
 				"Linux",
 				"Test",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -229,13 +974,13 @@
 				"VRST",
 				"Linux",
 				"Shipping",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -246,7 +991,7 @@
 				"VRST",
 				"Linux",
 				"Shipping",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -255,7 +1000,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -266,14 +1011,14 @@
 				"VRST",
 				"Linux",
 				"Shipping",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -284,13 +1029,13 @@
 				"VRST",
 				"LinuxArm64",
 				"Debug",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -301,7 +1046,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Debug",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -310,7 +1055,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -321,14 +1066,14 @@
 				"VRST",
 				"LinuxArm64",
 				"Debug",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -339,13 +1084,13 @@
 				"VRST",
 				"LinuxArm64",
 				"DebugGame",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -356,7 +1101,7 @@
 				"VRST",
 				"LinuxArm64",
 				"DebugGame",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -365,7 +1110,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -376,14 +1121,14 @@
 				"VRST",
 				"LinuxArm64",
 				"DebugGame",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -394,13 +1139,13 @@
 				"VRST",
 				"LinuxArm64",
 				"Development",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -411,7 +1156,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Development",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -420,7 +1165,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -431,14 +1176,14 @@
 				"VRST",
 				"LinuxArm64",
 				"Development",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -449,13 +1194,13 @@
 				"VRST",
 				"LinuxArm64",
 				"Test",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -466,7 +1211,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Test",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -475,7 +1220,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -486,14 +1231,14 @@
 				"VRST",
 				"LinuxArm64",
 				"Test",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -504,13 +1249,13 @@
 				"VRST",
 				"LinuxArm64",
 				"Shipping",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -521,7 +1266,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Shipping",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -530,7 +1275,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -541,14 +1286,14 @@
 				"VRST",
 				"LinuxArm64",
 				"Shipping",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -559,13 +1304,13 @@
 				"VRSTEditor",
 				"Linux",
 				"Debug",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -576,7 +1321,7 @@
 				"VRSTEditor",
 				"Linux",
 				"Debug",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -585,7 +1330,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -596,14 +1341,14 @@
 				"VRSTEditor",
 				"Linux",
 				"Debug",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -614,13 +1359,13 @@
 				"VRSTEditor",
 				"Linux",
 				"DebugGame",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -631,7 +1376,7 @@
 				"VRSTEditor",
 				"Linux",
 				"DebugGame",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -640,7 +1385,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -651,14 +1396,14 @@
 				"VRSTEditor",
 				"Linux",
 				"DebugGame",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -669,13 +1414,13 @@
 				"VRSTEditor",
 				"Linux",
 				"Development",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -686,7 +1431,7 @@
 				"VRSTEditor",
 				"Linux",
 				"Development",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -695,7 +1440,7 @@
 			],
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		},
 		{
@@ -706,14 +1451,14 @@
 				"VRSTEditor",
 				"Linux",
 				"Development",
-				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"/home/mango/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
 			"problemMatcher": "$msCompile",
 			"type": "shell",
 			"options": {
-				"cwd": "/home/mango/UE/UE5.1"
+				"cwd": "/home/mango/Games/UE5.1"
 			}
 		}
 	]
