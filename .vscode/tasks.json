@@ -9,7 +9,7 @@
 				"VRST",
 				"Android",
 				"Debug",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -24,8 +24,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=Debug",
 				"-ServerConfig=Debug",
@@ -56,8 +56,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=Debug",
 				"-ServerConfig=Debug",
@@ -86,8 +86,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=Debug",
 				"-ServerConfig=Debug",
@@ -120,7 +120,7 @@
 				"VRST",
 				"Android",
 				"Debug",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -140,7 +140,7 @@
 				"VRST",
 				"Android",
 				"Debug",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -158,7 +158,7 @@
 				"VRST",
 				"Android",
 				"DebugGame",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -173,8 +173,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=DebugGame",
 				"-ServerConfig=DebugGame",
@@ -205,8 +205,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=DebugGame",
 				"-ServerConfig=DebugGame",
@@ -235,8 +235,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=DebugGame",
 				"-ServerConfig=DebugGame",
@@ -269,7 +269,7 @@
 				"VRST",
 				"Android",
 				"DebugGame",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -289,7 +289,7 @@
 				"VRST",
 				"Android",
 				"DebugGame",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -307,7 +307,7 @@
 				"VRST",
 				"Android",
 				"Development",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -322,8 +322,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=Development",
 				"-ServerConfig=Development",
@@ -354,8 +354,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=Development",
 				"-ServerConfig=Development",
@@ -384,8 +384,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=Development",
 				"-ServerConfig=Development",
@@ -418,7 +418,7 @@
 				"VRST",
 				"Android",
 				"Development",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -438,7 +438,7 @@
 				"VRST",
 				"Android",
 				"Development",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -456,7 +456,7 @@
 				"VRST",
 				"Android",
 				"Test",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -471,8 +471,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=Test",
 				"-ServerConfig=Test",
@@ -503,8 +503,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=Test",
 				"-ServerConfig=Test",
@@ -533,8 +533,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=Test",
 				"-ServerConfig=Test",
@@ -567,7 +567,7 @@
 				"VRST",
 				"Android",
 				"Test",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -587,7 +587,7 @@
 				"VRST",
 				"Android",
 				"Test",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -605,7 +605,7 @@
 				"VRST",
 				"Android",
 				"Shipping",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -620,8 +620,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=Shipping",
 				"-ServerConfig=Shipping",
@@ -652,8 +652,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=Shipping",
 				"-ServerConfig=Shipping",
@@ -682,8 +682,8 @@
 			"command": "Engine/Build/BatchFiles/RunUAT.sh",
 			"args": [
 				"BuildCookRun",
-				"-ScriptsForProject=/home/mango/VRST/VRST.uproject",
-				"-Project=/home/mango/VRST/VRST.uproject",
+				"-ScriptsForProject=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
+				"-Project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-noP4",
 				"-ClientConfig=Shipping",
 				"-ServerConfig=Shipping",
@@ -716,7 +716,7 @@
 				"VRST",
 				"Android",
 				"Shipping",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -736,7 +736,7 @@
 				"VRST",
 				"Android",
 				"Shipping",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -754,7 +754,7 @@
 				"VRST",
 				"Linux",
 				"Debug",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -771,7 +771,7 @@
 				"VRST",
 				"Linux",
 				"Debug",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -791,7 +791,7 @@
 				"VRST",
 				"Linux",
 				"Debug",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -809,7 +809,7 @@
 				"VRST",
 				"Linux",
 				"DebugGame",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -826,7 +826,7 @@
 				"VRST",
 				"Linux",
 				"DebugGame",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -846,7 +846,7 @@
 				"VRST",
 				"Linux",
 				"DebugGame",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -864,7 +864,7 @@
 				"VRST",
 				"Linux",
 				"Development",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -881,7 +881,7 @@
 				"VRST",
 				"Linux",
 				"Development",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -901,7 +901,7 @@
 				"VRST",
 				"Linux",
 				"Development",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -919,7 +919,7 @@
 				"VRST",
 				"Linux",
 				"Test",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -936,7 +936,7 @@
 				"VRST",
 				"Linux",
 				"Test",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -956,7 +956,7 @@
 				"VRST",
 				"Linux",
 				"Test",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -974,7 +974,7 @@
 				"VRST",
 				"Linux",
 				"Shipping",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -991,7 +991,7 @@
 				"VRST",
 				"Linux",
 				"Shipping",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1011,7 +1011,7 @@
 				"VRST",
 				"Linux",
 				"Shipping",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -1029,7 +1029,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Debug",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1046,7 +1046,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Debug",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1066,7 +1066,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Debug",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -1084,7 +1084,7 @@
 				"VRST",
 				"LinuxArm64",
 				"DebugGame",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1101,7 +1101,7 @@
 				"VRST",
 				"LinuxArm64",
 				"DebugGame",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1121,7 +1121,7 @@
 				"VRST",
 				"LinuxArm64",
 				"DebugGame",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -1139,7 +1139,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Development",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1156,7 +1156,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Development",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1176,7 +1176,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Development",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -1194,7 +1194,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Test",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1211,7 +1211,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Test",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1231,7 +1231,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Test",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -1249,7 +1249,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Shipping",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1266,7 +1266,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Shipping",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1286,7 +1286,7 @@
 				"VRST",
 				"LinuxArm64",
 				"Shipping",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -1304,7 +1304,7 @@
 				"VRSTEditor",
 				"Linux",
 				"Debug",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1321,7 +1321,7 @@
 				"VRSTEditor",
 				"Linux",
 				"Debug",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1341,7 +1341,7 @@
 				"VRSTEditor",
 				"Linux",
 				"Debug",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -1359,7 +1359,7 @@
 				"VRSTEditor",
 				"Linux",
 				"DebugGame",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1376,7 +1376,7 @@
 				"VRSTEditor",
 				"Linux",
 				"DebugGame",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1396,7 +1396,7 @@
 				"VRSTEditor",
 				"Linux",
 				"DebugGame",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],
@@ -1414,7 +1414,7 @@
 				"VRSTEditor",
 				"Linux",
 				"Development",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1431,7 +1431,7 @@
 				"VRSTEditor",
 				"Linux",
 				"Development",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex"
 			],
 			"problemMatcher": "$msCompile",
@@ -1451,7 +1451,7 @@
 				"VRSTEditor",
 				"Linux",
 				"Development",
-				"/home/mango/VRST/VRST.uproject",
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-waitmutex",
 				"-clean"
 			],

@@ -1,5 +1,5 @@
 -include "/home/mango/Games/UE5.1/Engine/Intermediate/Build/Linux/B4D820EA/UnrealEditor/Development/DeveloperToolSettings/Definitions.DeveloperToolSettings.h" 
--include "/home/mango/VRST/Intermediate/Build/Linux/B4D820EA/VRSTEditor/Development/CoreUObject/SharedPCH.CoreUObject.ShadowErrors.h" 
+-include "/home/mango/Documents/Unreal Projects/VRST/Intermediate/Build/Linux/B4D820EA/VRSTEditor/Development/CoreUObject/SharedPCH.CoreUObject.ShadowErrors.h" 
 -I "/home/mango/Games/UE5.1/Engine/Source" 
 -I "/home/mango/Games/UE5.1/Engine/Source/Developer/DeveloperToolSettings/Private" 
 -I "/home/mango/Games/UE5.1/Engine/Intermediate/Build/Linux/B4D820EA/UnrealEditor/Inc/Core/UHT" 

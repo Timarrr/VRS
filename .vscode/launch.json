@@ -8,12 +8,12 @@
 			"type": "fb-lldb",
 			"android": {
 				"application": {
-					"package": "com.epicgames.VRST",
+					"package": "com.wp2.VRST",
 					"activity": "com.epicgames.unreal.GameActivity"
 				},
 				"lldbConfig": {
 					"librarySearchPaths": [
-						"\\\"/home/mango/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
 					],
 					"lldbPreTargetCreateCommands": [
 						"command script import \\\"/home/mango/Games/UE5.1/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
@@ -31,12 +31,12 @@
 			"type": "fb-lldb",
 			"android": {
 				"application": {
-					"package": "com.epicgames.VRST",
+					"package": "com.wp2.VRST",
 					"activity": "com.epicgames.unreal.GameActivity"
 				},
 				"lldbConfig": {
 					"librarySearchPaths": [
-						"\\\"/home/mango/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
 					],
 					"lldbPreTargetCreateCommands": [
 						"command script import \\\"/home/mango/Games/UE5.1/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
@@ -54,12 +54,12 @@
 			"type": "fb-lldb",
 			"android": {
 				"application": {
-					"package": "com.epicgames.VRST",
+					"package": "com.wp2.VRST",
 					"activity": "com.epicgames.unreal.GameActivity"
 				},
 				"lldbConfig": {
 					"librarySearchPaths": [
-						"\\\"/home/mango/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
 					],
 					"lldbPreTargetCreateCommands": [
 						"command script import \\\"/home/mango/Games/UE5.1/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
@@ -76,12 +76,12 @@
 			"type": "fb-lldb",
 			"android": {
 				"application": {
-					"package": "com.epicgames.VRST",
+					"package": "com.wp2.VRST",
 					"activity": "com.epicgames.unreal.GameActivity"
 				},
 				"lldbConfig": {
 					"librarySearchPaths": [
-						"\\\"/home/mango/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
 					],
 					"lldbPreTargetCreateCommands": [
 						"command script import \\\"/home/mango/Games/UE5.1/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
@@ -99,12 +99,12 @@
 			"type": "fb-lldb",
 			"android": {
 				"application": {
-					"package": "com.epicgames.VRST",
+					"package": "com.wp2.VRST",
 					"activity": "com.epicgames.unreal.GameActivity"
 				},
 				"lldbConfig": {
 					"librarySearchPaths": [
-						"\\\"/home/mango/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
 					],
 					"lldbPreTargetCreateCommands": [
 						"command script import \\\"/home/mango/Games/UE5.1/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
@@ -122,12 +122,12 @@
 			"type": "fb-lldb",
 			"android": {
 				"application": {
-					"package": "com.epicgames.VRST",
+					"package": "com.wp2.VRST",
 					"activity": "com.epicgames.unreal.GameActivity"
 				},
 				"lldbConfig": {
 					"librarySearchPaths": [
-						"\\\"/home/mango/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
 					],
 					"lldbPreTargetCreateCommands": [
 						"command script import \\\"/home/mango/Games/UE5.1/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
@@ -141,7 +141,7 @@
 		{
 			"name": "Launch VRST (Debug)",
 			"request": "launch",
-			"program": "/home/mango/VRST/Binaries/Linux/UnrealGame-Linux-Debug",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame-Linux-Debug",
 			"preLaunchTask": "VRST Linux Debug Build",
 			"args": [
 			],
@@ -153,7 +153,7 @@
 		{
 			"name": "Launch VRST (DebugGame)",
 			"request": "launch",
-			"program": "/home/mango/VRST/Binaries/Linux/UnrealGame-Linux-DebugGame",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame-Linux-DebugGame",
 			"preLaunchTask": "VRST Linux DebugGame Build",
 			"args": [
 			],
@@ -165,7 +165,7 @@
 		{
 			"name": "Launch VRST (Development)",
 			"request": "launch",
-			"program": "/home/mango/VRST/Binaries/Linux/UnrealGame",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame",
 			"preLaunchTask": "VRST Linux Development Build",
 			"args": [
 			],
@@ -177,7 +177,7 @@
 		{
 			"name": "Launch VRST (Test)",
 			"request": "launch",
-			"program": "/home/mango/VRST/Binaries/Linux/UnrealGame-Linux-Test",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame-Linux-Test",
 			"preLaunchTask": "VRST Linux Test Build",
 			"args": [
 			],
@@ -189,7 +189,7 @@
 		{
 			"name": "Launch VRST (Shipping)",
 			"request": "launch",
-			"program": "/home/mango/VRST/Binaries/Linux/UnrealGame-Linux-Shipping",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame-Linux-Shipping",
 			"preLaunchTask": "VRST Linux Shipping Build",
 			"args": [
 			],
@@ -204,7 +204,7 @@
 			"program": "/home/mango/Games/UE5.1/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
 			"preLaunchTask": "VRSTEditor Linux Debug Build",
 			"args": [
-				"/home/mango/VRST/VRST.uproject"
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject"
 			],
 			"cwd": "/home/mango/Games/UE5.1",
 			"type": "cppdbg",
@@ -217,7 +217,7 @@
 			"program": "/home/mango/Games/UE5.1/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
 			"preLaunchTask": "VRSTEditor Linux DebugGame Build",
 			"args": [
-				"/home/mango/VRST/VRST.uproject"
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject"
 			],
 			"cwd": "/home/mango/Games/UE5.1",
 			"type": "cppdbg",
@@ -230,7 +230,7 @@
 			"program": "/home/mango/Games/UE5.1/Engine/Binaries/Linux/UnrealEditor",
 			"preLaunchTask": "VRSTEditor Linux Development Build",
 			"args": [
-				"/home/mango/VRST/VRST.uproject"
+				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject"
 			],
 			"cwd": "/home/mango/Games/UE5.1",
 			"type": "cppdbg",
@@ -245,7 +245,7 @@
 			"args": [
 				"-projectfiles",
 				"-vscode",
-				"-project=/home/mango/VRST/VRST.uproject",
+				"-project=/home/mango/Documents/Unreal Projects/VRST/VRST.uproject",
 				"-game",
 				"-engine"
 			],

@@ -1,5 +1,5 @@
 -include "/home/mango/Games/UE5.1/Engine/Plugins/Developer/TraceDataFiltering/Intermediate/Build/Linux/B4D820EA/UnrealEditor/Development/TraceDataFiltering/Definitions.TraceDataFiltering.h" 
--include "/home/mango/VRST/Intermediate/Build/Linux/B4D820EA/VRSTEditor/Development/Slate/SharedPCH.Slate.ShadowErrors.h" 
+-include "/home/mango/Documents/Unreal Projects/VRST/Intermediate/Build/Linux/B4D820EA/VRSTEditor/Development/Slate/SharedPCH.Slate.ShadowErrors.h" 
 -I "/home/mango/Games/UE5.1/Engine/Source" 
 -I "/home/mango/Games/UE5.1/Engine/Plugins/Developer/TraceDataFiltering/Source/TraceDataFiltering/Private" 
 -I "/home/mango/Games/UE5.1/Engine/Intermediate/Build/Linux/B4D820EA/UnrealEditor/Inc/Core/UHT" 

@@ -1,5 +1,5 @@
 -include "/home/mango/Games/UE5.1/Engine/Plugins/Media/ImgMedia/Intermediate/Build/Linux/B4D820EA/UnrealEditor/Development/OpenExrWrapper/Definitions.OpenExrWrapper.h" 
--include "/home/mango/VRST/Intermediate/Build/Linux/B4D820EA/VRSTEditor/Development/Core/SharedPCH.Core.RTTI.ShadowErrors.h" 
+-include "/home/mango/Documents/Unreal Projects/VRST/Intermediate/Build/Linux/B4D820EA/VRSTEditor/Development/Core/SharedPCH.Core.RTTI.ShadowErrors.h" 
 -I "/home/mango/Games/UE5.1/Engine/Source" 
 -I "/home/mango/Games/UE5.1/Engine/Plugins/Media/ImgMedia/Source/OpenExrWrapper/Private" 
 -I "/home/mango/Games/UE5.1/Engine/Plugins/Media/ImgMedia/Intermediate/Build/Linux/B4D820EA/UnrealEditor/Inc/OpenExrWrapper/UHT" 

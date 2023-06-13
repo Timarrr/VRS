@@ -1,5 +1,5 @@
 -include "/home/mango/Games/UE5.1/Engine/Plugins/Developer/RiderSourceCodeAccess/Intermediate/Build/Linux/B4D820EA/UnrealEditor/Development/RiderSCA/Definitions.RiderSourceCodeAccess.h" 
--include "/home/mango/VRST/Intermediate/Build/Linux/B4D820EA/VRSTEditor/Development/UnrealEd/SharedPCH.UnrealEd.ShadowErrors.h" 
+-include "/home/mango/Documents/Unreal Projects/VRST/Intermediate/Build/Linux/B4D820EA/VRSTEditor/Development/UnrealEd/SharedPCH.UnrealEd.ShadowErrors.h" 
 -I "/home/mango/Games/UE5.1/Engine/Source" 
 -I "/home/mango/Games/UE5.1/Engine/Plugins/Developer/RiderSourceCodeAccess/Source/RiderSourceCodeAccess/Private" 
 -I "/home/mango/Games/UE5.1/Engine/Intermediate/Build/Linux/B4D820EA/UnrealEditor/Inc/Core/UHT" 

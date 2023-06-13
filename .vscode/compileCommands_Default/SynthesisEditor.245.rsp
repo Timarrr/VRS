@@ -1,5 +1,5 @@
 -include "/home/mango/Games/UE5.1/Engine/Plugins/Runtime/Synthesis/Intermediate/Build/Linux/B4D820EA/UnrealEditor/Development/SynthesisEditor/Definitions.SynthesisEditor.h" 
--include "/home/mango/VRST/Intermediate/Build/Linux/B4D820EA/VRSTEditor/Development/UnrealEd/SharedPCH.UnrealEd.ShadowErrors.h" 
+-include "/home/mango/Documents/Unreal Projects/VRST/Intermediate/Build/Linux/B4D820EA/VRSTEditor/Development/UnrealEd/SharedPCH.UnrealEd.ShadowErrors.h" 
 -I "/home/mango/Games/UE5.1/Engine/Source" 
 -I "/home/mango/Games/UE5.1/Engine/Plugins/Runtime/Synthesis/Source/SynthesisEditor/Private" 
 -I "/home/mango/Games/UE5.1/Engine/Plugins/Runtime/AudioSynesthesia/Intermediate/Build/Linux/B4D820EA/UnrealEditor/Inc/AudioSynesthesiaCore/UHT" 
