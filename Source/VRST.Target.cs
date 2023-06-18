@@ -9,8 +9,23 @@ public class VRSTTarget : TargetRules
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 
-		ExtraModuleNames.AddRange( new string[] { "VRST" } );
-	}
+            // This only works in editor or Unique build environments
+            if (Target.Type == TargetType.Editor)
+            {
+            }
+            else
+            {
+                // Shared monolithic builds cannot enable/disable plugins or change any options because it tries to re-use the installed engine binaries
+                if (!bHasWarnedAboutShared)
+                {
+                    bHasWarnedAboutShared = true;
+                    // Log.TraceWarning("LyraGameEOS and dynamic target options are disabled when packaging from an installed version of the engine");
+                }
+            }
+        }
+    }
+
+
+
 }

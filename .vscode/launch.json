@@ -16,7 +16,7 @@
 						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
 					],
 					"lldbPreTargetCreateCommands": [
-						"command script import \\\"/home/mango/Games/UE5.1/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
 					],
 					"lldbPostTargetCreateCommands": [
 						"process handle --pass true --stop false --notify true SIGILL"
@@ -39,7 +39,7 @@
 						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
 					],
 					"lldbPreTargetCreateCommands": [
-						"command script import \\\"/home/mango/Games/UE5.1/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
 					],
 					"lldbPostTargetCreateCommands": [
 						"process handle --pass true --stop false --notify true SIGILL"
@@ -62,7 +62,7 @@
 						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
 					],
 					"lldbPreTargetCreateCommands": [
-						"command script import \\\"/home/mango/Games/UE5.1/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
 					],
 					"lldbPostTargetCreateCommands": [
 						"process handle --pass true --stop false --notify true SIGILL"
@@ -84,7 +84,7 @@
 						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
 					],
 					"lldbPreTargetCreateCommands": [
-						"command script import \\\"/home/mango/Games/UE5.1/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
 					],
 					"lldbPostTargetCreateCommands": [
 						"process handle --pass true --stop false --notify true SIGILL"
@@ -107,7 +107,7 @@
 						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
 					],
 					"lldbPreTargetCreateCommands": [
-						"command script import \\\"/home/mango/Games/UE5.1/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
 					],
 					"lldbPostTargetCreateCommands": [
 						"process handle --pass true --stop false --notify true SIGILL"
@@ -130,7 +130,7 @@
 						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRST_Symbols_v1/VRST-arm64\\\""
 					],
 					"lldbPreTargetCreateCommands": [
-						"command script import \\\"/home/mango/Games/UE5.1/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
 					],
 					"lldbPostTargetCreateCommands": [
 						"process handle --pass true --stop false --notify true SIGILL"
@@ -141,107 +141,501 @@
 		{
 			"name": "Launch VRST (Debug)",
 			"request": "launch",
-			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame-Linux-Debug",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRST-Linux-Debug",
 			"preLaunchTask": "VRST Linux Debug Build",
 			"args": [
 			],
-			"cwd": "/home/mango/Games/UE5.1",
+			"cwd": "/home/mango/UnrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/mango/Games/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
 			"name": "Launch VRST (DebugGame)",
 			"request": "launch",
-			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame-Linux-DebugGame",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRST-Linux-DebugGame",
 			"preLaunchTask": "VRST Linux DebugGame Build",
 			"args": [
 			],
-			"cwd": "/home/mango/Games/UE5.1",
+			"cwd": "/home/mango/UnrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/mango/Games/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
 			"name": "Launch VRST (Development)",
 			"request": "launch",
-			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRST",
 			"preLaunchTask": "VRST Linux Development Build",
 			"args": [
 			],
-			"cwd": "/home/mango/Games/UE5.1",
+			"cwd": "/home/mango/UnrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/mango/Games/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
 			"name": "Launch VRST (Test)",
 			"request": "launch",
-			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame-Linux-Test",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRST-Linux-Test",
 			"preLaunchTask": "VRST Linux Test Build",
 			"args": [
 			],
-			"cwd": "/home/mango/Games/UE5.1",
+			"cwd": "/home/mango/UnrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/mango/Games/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
 			"name": "Launch VRST (Shipping)",
 			"request": "launch",
-			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/UnrealGame-Linux-Shipping",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRST-Linux-Shipping",
 			"preLaunchTask": "VRST Linux Shipping Build",
 			"args": [
 			],
-			"cwd": "/home/mango/Games/UE5.1",
+			"cwd": "/home/mango/UnrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/mango/Games/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "VRSTClient Oculus (Debug) Launch",
+			"request": "launch",
+			"preLaunchTask": "VRSTClient Android Debug Deploy",
+			"type": "fb-lldb",
+			"android": {
+				"application": {
+					"package": "com.wp2.VRSTClient",
+					"activity": "com.epicgames.unreal.GameActivity"
+				},
+				"lldbConfig": {
+					"librarySearchPaths": [
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRSTClient_Symbols_v1/VRSTClient-arm64\\\""
+					],
+					"lldbPreTargetCreateCommands": [
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+					],
+					"lldbPostTargetCreateCommands": [
+						"process handle --pass true --stop false --notify true SIGILL"
+					]
+				}
+			}
+		},
+		{
+			"name": "VRSTClient Oculus (DebugGame) Launch",
+			"request": "launch",
+			"preLaunchTask": "VRSTClient Android DebugGame Deploy",
+			"type": "fb-lldb",
+			"android": {
+				"application": {
+					"package": "com.wp2.VRSTClient",
+					"activity": "com.epicgames.unreal.GameActivity"
+				},
+				"lldbConfig": {
+					"librarySearchPaths": [
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRSTClient_Symbols_v1/VRSTClient-arm64\\\""
+					],
+					"lldbPreTargetCreateCommands": [
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+					],
+					"lldbPostTargetCreateCommands": [
+						"process handle --pass true --stop false --notify true SIGILL"
+					]
+				}
+			}
+		},
+		{
+			"name": "VRSTClient Oculus (Development) Launch",
+			"request": "launch",
+			"preLaunchTask": "VRSTClient Android Development Deploy",
+			"type": "fb-lldb",
+			"android": {
+				"application": {
+					"package": "com.wp2.VRSTClient",
+					"activity": "com.epicgames.unreal.GameActivity"
+				},
+				"lldbConfig": {
+					"librarySearchPaths": [
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRSTClient_Symbols_v1/VRSTClient-arm64\\\""
+					],
+					"lldbPreTargetCreateCommands": [
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+					],
+					"lldbPostTargetCreateCommands": [
+						"process handle --pass true --stop false --notify true SIGILL"
+					]
+				}
+			}
+		},
+		{
+			"name": "VRSTClient Oculus (Development) Attach",
+			"request": "attach",
+			"type": "fb-lldb",
+			"android": {
+				"application": {
+					"package": "com.wp2.VRSTClient",
+					"activity": "com.epicgames.unreal.GameActivity"
+				},
+				"lldbConfig": {
+					"librarySearchPaths": [
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRSTClient_Symbols_v1/VRSTClient-arm64\\\""
+					],
+					"lldbPreTargetCreateCommands": [
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+					],
+					"lldbPostTargetCreateCommands": [
+						"process handle --pass true --stop false --notify true SIGILL"
+					]
+				}
+			}
+		},
+		{
+			"name": "VRSTClient Oculus (Test) Launch",
+			"request": "launch",
+			"preLaunchTask": "VRSTClient Android Test Deploy",
+			"type": "fb-lldb",
+			"android": {
+				"application": {
+					"package": "com.wp2.VRSTClient",
+					"activity": "com.epicgames.unreal.GameActivity"
+				},
+				"lldbConfig": {
+					"librarySearchPaths": [
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRSTClient_Symbols_v1/VRSTClient-arm64\\\""
+					],
+					"lldbPreTargetCreateCommands": [
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+					],
+					"lldbPostTargetCreateCommands": [
+						"process handle --pass true --stop false --notify true SIGILL"
+					]
+				}
+			}
+		},
+		{
+			"name": "VRSTClient Oculus (Shipping) Launch",
+			"request": "launch",
+			"preLaunchTask": "VRSTClient Android Shipping Deploy",
+			"type": "fb-lldb",
+			"android": {
+				"application": {
+					"package": "com.wp2.VRSTClient",
+					"activity": "com.epicgames.unreal.GameActivity"
+				},
+				"lldbConfig": {
+					"librarySearchPaths": [
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRSTClient_Symbols_v1/VRSTClient-arm64\\\""
+					],
+					"lldbPreTargetCreateCommands": [
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+					],
+					"lldbPostTargetCreateCommands": [
+						"process handle --pass true --stop false --notify true SIGILL"
+					]
+				}
+			}
+		},
+		{
+			"name": "Launch VRSTClient (Debug)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRSTClient-Linux-Debug",
+			"preLaunchTask": "VRSTClient Linux Debug Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRSTClient (DebugGame)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRSTClient-Linux-DebugGame",
+			"preLaunchTask": "VRSTClient Linux DebugGame Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRSTClient (Development)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRSTClient",
+			"preLaunchTask": "VRSTClient Linux Development Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRSTClient (Test)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRSTClient-Linux-Test",
+			"preLaunchTask": "VRSTClient Linux Test Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRSTClient (Shipping)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRSTClient-Linux-Shipping",
+			"preLaunchTask": "VRSTClient Linux Shipping Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
 			"name": "Launch VRSTEditor (Debug)",
 			"request": "launch",
-			"program": "/home/mango/Games/UE5.1/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
+			"program": "/home/mango/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-Debug",
 			"preLaunchTask": "VRSTEditor Linux Debug Build",
 			"args": [
 				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject"
 			],
-			"cwd": "/home/mango/Games/UE5.1",
+			"cwd": "/home/mango/UnrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/mango/Games/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
 			"name": "Launch VRSTEditor (DebugGame)",
 			"request": "launch",
-			"program": "/home/mango/Games/UE5.1/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
+			"program": "/home/mango/UnrealEngine/Engine/Binaries/Linux/UnrealEditor-Linux-DebugGame",
 			"preLaunchTask": "VRSTEditor Linux DebugGame Build",
 			"args": [
 				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject"
 			],
-			"cwd": "/home/mango/Games/UE5.1",
+			"cwd": "/home/mango/UnrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/mango/Games/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
 			"name": "Launch VRSTEditor (Development)",
 			"request": "launch",
-			"program": "/home/mango/Games/UE5.1/Engine/Binaries/Linux/UnrealEditor",
+			"program": "/home/mango/UnrealEngine/Engine/Binaries/Linux/UnrealEditor",
 			"preLaunchTask": "VRSTEditor Linux Development Build",
 			"args": [
 				"/home/mango/Documents/Unreal Projects/VRST/VRST.uproject"
 			],
-			"cwd": "/home/mango/Games/UE5.1",
+			"cwd": "/home/mango/UnrealEngine",
 			"type": "cppdbg",
-			"visualizerFile": "/home/mango/Games/UE5.1/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "VRSTServer Oculus (Debug) Launch",
+			"request": "launch",
+			"preLaunchTask": "VRSTServer Android Debug Deploy",
+			"type": "fb-lldb",
+			"android": {
+				"application": {
+					"package": "com.wp2.VRSTServer",
+					"activity": "com.epicgames.unreal.GameActivity"
+				},
+				"lldbConfig": {
+					"librarySearchPaths": [
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRSTServer_Symbols_v1/VRSTServer-arm64\\\""
+					],
+					"lldbPreTargetCreateCommands": [
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+					],
+					"lldbPostTargetCreateCommands": [
+						"process handle --pass true --stop false --notify true SIGILL"
+					]
+				}
+			}
+		},
+		{
+			"name": "VRSTServer Oculus (DebugGame) Launch",
+			"request": "launch",
+			"preLaunchTask": "VRSTServer Android DebugGame Deploy",
+			"type": "fb-lldb",
+			"android": {
+				"application": {
+					"package": "com.wp2.VRSTServer",
+					"activity": "com.epicgames.unreal.GameActivity"
+				},
+				"lldbConfig": {
+					"librarySearchPaths": [
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRSTServer_Symbols_v1/VRSTServer-arm64\\\""
+					],
+					"lldbPreTargetCreateCommands": [
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+					],
+					"lldbPostTargetCreateCommands": [
+						"process handle --pass true --stop false --notify true SIGILL"
+					]
+				}
+			}
+		},
+		{
+			"name": "VRSTServer Oculus (Development) Launch",
+			"request": "launch",
+			"preLaunchTask": "VRSTServer Android Development Deploy",
+			"type": "fb-lldb",
+			"android": {
+				"application": {
+					"package": "com.wp2.VRSTServer",
+					"activity": "com.epicgames.unreal.GameActivity"
+				},
+				"lldbConfig": {
+					"librarySearchPaths": [
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRSTServer_Symbols_v1/VRSTServer-arm64\\\""
+					],
+					"lldbPreTargetCreateCommands": [
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+					],
+					"lldbPostTargetCreateCommands": [
+						"process handle --pass true --stop false --notify true SIGILL"
+					]
+				}
+			}
+		},
+		{
+			"name": "VRSTServer Oculus (Development) Attach",
+			"request": "attach",
+			"type": "fb-lldb",
+			"android": {
+				"application": {
+					"package": "com.wp2.VRSTServer",
+					"activity": "com.epicgames.unreal.GameActivity"
+				},
+				"lldbConfig": {
+					"librarySearchPaths": [
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRSTServer_Symbols_v1/VRSTServer-arm64\\\""
+					],
+					"lldbPreTargetCreateCommands": [
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+					],
+					"lldbPostTargetCreateCommands": [
+						"process handle --pass true --stop false --notify true SIGILL"
+					]
+				}
+			}
+		},
+		{
+			"name": "VRSTServer Oculus (Test) Launch",
+			"request": "launch",
+			"preLaunchTask": "VRSTServer Android Test Deploy",
+			"type": "fb-lldb",
+			"android": {
+				"application": {
+					"package": "com.wp2.VRSTServer",
+					"activity": "com.epicgames.unreal.GameActivity"
+				},
+				"lldbConfig": {
+					"librarySearchPaths": [
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRSTServer_Symbols_v1/VRSTServer-arm64\\\""
+					],
+					"lldbPreTargetCreateCommands": [
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+					],
+					"lldbPostTargetCreateCommands": [
+						"process handle --pass true --stop false --notify true SIGILL"
+					]
+				}
+			}
+		},
+		{
+			"name": "VRSTServer Oculus (Shipping) Launch",
+			"request": "launch",
+			"preLaunchTask": "VRSTServer Android Shipping Deploy",
+			"type": "fb-lldb",
+			"android": {
+				"application": {
+					"package": "com.wp2.VRSTServer",
+					"activity": "com.epicgames.unreal.GameActivity"
+				},
+				"lldbConfig": {
+					"librarySearchPaths": [
+						"\\\"/home/mango/Documents/Unreal Projects/VRST/Binaries/Android/VRSTServer_Symbols_v1/VRSTServer-arm64\\\""
+					],
+					"lldbPreTargetCreateCommands": [
+						"command script import \\\"/home/mango/UnrealEngine/Engine/Extras/LLDBDataFormatters/UEDataFormatters_2ByteChars.py\\\""
+					],
+					"lldbPostTargetCreateCommands": [
+						"process handle --pass true --stop false --notify true SIGILL"
+					]
+				}
+			}
+		},
+		{
+			"name": "Launch VRSTServer (Debug)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRSTServer-Linux-Debug",
+			"preLaunchTask": "VRSTServer Linux Debug Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRSTServer (DebugGame)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRSTServer-Linux-DebugGame",
+			"preLaunchTask": "VRSTServer Linux DebugGame Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRSTServer (Development)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRSTServer",
+			"preLaunchTask": "VRSTServer Linux Development Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRSTServer (Test)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRSTServer-Linux-Test",
+			"preLaunchTask": "VRSTServer Linux Test Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
+			"showDisplayString": true
+		},
+		{
+			"name": "Launch VRSTServer (Shipping)",
+			"request": "launch",
+			"program": "/home/mango/Documents/Unreal Projects/VRST/Binaries/Linux/VRSTServer-Linux-Shipping",
+			"preLaunchTask": "VRSTServer Linux Shipping Build",
+			"args": [
+			],
+			"cwd": "/home/mango/UnrealEngine",
+			"type": "cppdbg",
+			"visualizerFile": "/home/mango/UnrealEngine/Engine/Extras/VisualStudioDebugging/Unreal.natvis",
 			"showDisplayString": true
 		},
 		{
 			"name": "Generate Project Files",
 			"type": "coreclr",
 			"request": "launch",
-			"program": "/home/mango/Games/UE5.1/Engine/Build/BatchFiles/RunUBT.bat",
+			"program": "/home/mango/UnrealEngine/Engine/Build/BatchFiles/RunUBT.bat",
 			"args": [
 				"-projectfiles",
 				"-vscode",
@@ -252,7 +646,7 @@
 			"console": "internalConsole",
 			"internalConsoleOptions": "openOnSessionStart",
 			"stopAtEntry": false,
-			"cwd": "/home/mango/Games/UE5.1"
+			"cwd": "/home/mango/UnrealEngine"
 		}
 	]
 }
