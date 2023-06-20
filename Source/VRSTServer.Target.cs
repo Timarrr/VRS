@@ -13,7 +13,7 @@ public class VRSTServerTarget : TargetRules
 
 		ExtraModuleNames.AddRange( new string[] { "VRST" } );
 
-		// VRSTGameTarget.ApplySharedVRSTTargetSettings(this);
+		VRSTTarget.ApplySharedVRSTTargetSettings(this);
 
 		bUseChecksInShipping = true;
 	}

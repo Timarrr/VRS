@@ -1,30 +1,31 @@
 {
-	"configurations": [
-		{
-			"name": "VRSTEditor Editor Linux Development (VRST)",
-			"compilerPath": "/home/mango/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v21_clang-15.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
-			"compilerArgs": [
-				"-isysroot",
-				"/home/mango/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v21_clang-15.0.1-centos7/x86_64-unknown-linux-gnu"
-			],
-			"cStandard": "c17",
-			"cppStandard": "c++17",
-			"intelliSenseMode": "clang-x64",
-			"configurationProvider": "epic.ue",
-			"compileCommands": "/home/mango/Documents/Unreal Projects/VRST/.vscode/compileCommands_VRST.json"
-		},
-		{
-			"name": "Linux",
-			"compilerPath": "/home/mango/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v21_clang-15.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
-			"compilerArgs": [
-				"-isysroot",
-				"/home/mango/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v21_clang-15.0.1-centos7/x86_64-unknown-linux-gnu"
-			],
-			"cStandard": "c17",
-			"cppStandard": "c++17",
-			"intelliSenseMode": "clang-x64",
-			"configurationProvider": "epic.ue",
-			"compileCommands": "/home/mango/Documents/Unreal Projects/VRST/.vscode/compileCommands_Default.json"
-		}
-	]
+    "configurations": [
+        {
+            "name": "VRSTEditor Editor Linux Development (VRST)",
+            "compilerPath": "/home/mango/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v21_clang-15.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+            "compilerArgs": [
+                "-isysroot",
+                "/home/mango/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v21_clang-15.0.1-centos7/x86_64-unknown-linux-gnu"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "configurationProvider": "epic.ue",
+            "compileCommands": "/home/mango/Documents/Unreal Projects/VRST/.vscode/compileCommands_VRST.json"
+        },
+        {
+            "name": "Linux",
+            "compilerPath": "/home/mango/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v21_clang-15.0.1-centos7/x86_64-unknown-linux-gnu/bin/clang++",
+            "compilerArgs": [
+                "-isysroot",
+                "/home/mango/UnrealEngine/Engine/Extras/ThirdPartyNotUE/SDKs/HostLinux/Linux_x64/v21_clang-15.0.1-centos7/x86_64-unknown-linux-gnu"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "configurationProvider": "epic.ue",
+            "compileCommands": "/home/mango/Documents/Unreal Projects/VRST/.vscode/compileCommands_Default.json"
+        }
+    ],
+    "version": 4
 }

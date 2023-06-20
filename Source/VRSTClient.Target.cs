@@ -13,6 +13,6 @@ public class VRSTClientTarget : TargetRules
 
 		ExtraModuleNames.AddRange( new string[] { "VRST" } );
 
-		// VRSTGameTarget.ApplySharedVRSTTargetSettings(this);
+		VRSTTarget.ApplySharedVRSTTargetSettings(this);
 	}
 }

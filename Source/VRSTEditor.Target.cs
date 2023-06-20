@@ -12,5 +12,7 @@ public class VRSTEditorTarget : TargetRules
 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
 
 		ExtraModuleNames.AddRange( new string[] { "VRST" } );
+
+		VRSTTarget.ApplySharedVRSTTargetSettings(this);
 	}
 }
